@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sr-Cyrl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Слово по слово — словарица</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1 class="title"><span style="color:#1c6690">С</span><span style="color:#2b87b8">Л</span><span style="color:#2f8f6a">О</span><span style="color:#c9411f">В</span><span style="color:#123b4f">О</span><span class="sp"> </span><span style="color:#1c6690">П</span><span style="color:#2b87b8">О</span><span class="sp"> </span><span style="color:#2f8f6a">С</span><span style="color:#c9411f">Л</span><span style="color:#123b4f">О</span><span style="color:#1c6690">В</span><span style="color:#2b87b8">О</span></h1>
+    <div class="tools">
+      <button type="button" id="btnCase">Мала слова</button>
+      <button type="button" id="btnBack">Обриши</button>
+      <button type="button" id="btnPrev">← Претходна</button>
+      <button type="button" id="btnNext" class="primary">Следећа →</button>
+    </div>
+  </header>
+
+  <section class="main">
+    <div class="card">
+      <span class="label">Слика</span>
+      <div class="pic-box"><img id="pic" alt="" /></div>
+      <div class="pic-foot">
+        <span class="muted" id="progress"></span>
+        <input type="number" id="jump" min="1" />
+        <button type="button" id="btnHint" class="ghost">Помоћ</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="write-head">
+        <span class="label">Упиши шта је на слици · <span class="muted" id="len"></span></span>
+        <span class="status" id="status"></span>
+      </div>
+      <div class="strip" id="strip"></div>
+      <div id="party"></div>
+    </div>
+  </section>
+
+  <section class="board" id="board"></section>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
